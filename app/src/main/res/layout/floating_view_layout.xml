@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--Root View-->
+    <RelativeLayout
+        android:id="@+id/rl_root_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--Collapased State-->
+        <LinearLayout
+            android:id="@+id/ll_collapsed_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <!--Bird Image-->
+            <ImageView
+                android:id="@+id/iv_collapsed_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bird" />
+
+            <!--Close Button-->
+            <ImageView
+                android:id="@+id/iv_collapsed_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/close_button" />
+
+        </LinearLayout>
+
+        <!--Expanded View-->
+        <LinearLayout
+            android:id="@+id/ll_expanded_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:alpha="0.6"
+            android:background="#f0f"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_lion"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lion" />
+
+            <ImageView
+                android:id="@+id/iv_lion_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lion" />
+
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close" />
+
+            <Button
+                android:id="@+id/btn_open_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="open app" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
